@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 0;
+	font-style: italic;
+
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-bottom: 0.2rem;
+	font-weight: normal;
+}
+
+.background,
+.app-container {
+	position: fixed;
+	height: 100vh;
+}
+
+.background {
+	user-select: none;
+	text-align: justify;
+	padding: 0 1rem;
+	line-height: 1.5;
+	font-size: 1.5rem;
+	filter: blur(0.18rem);
+	font-style: italic;
+}
+
+.app-container {
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	overflow: auto;
+}
+
+.app {
+	width: 14rem;
+	padding: 1rem;
+	text-align: center;
+
+	color: white;
+	background-color: #303030;
+	border-radius: 0.5rem;
+	/* border: 0.25rem ridge rgb(0, 102, 128); */
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+	/* inset 0 0 1rem rgba(0, 0, 0, 1); */
+}
+
+.app label {
+	display: block;
+}
+
+.app ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.app ul li {
+	padding: 0.25rem 0;
+}
+
+.app ul li:first-child {
+	font-size: x-large;
+	border-bottom: 1px solid white;
+}
+
+.app .settings label {
+	margin-top: 0.3rem;
+}
+
+.app .settings span {
+	display: inline-block;
+	width: 5rem;
+	text-align: right;
+	margin-right: 0.25rem;
+}
+
+.app .settings input[type="number"] {
+	margin-left: 0.25rem;
+	margin-bottom: 0.3rem;
+	width: 5rem;
+}
+
+.app button {
+	margin-top: 1rem;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unique word generator</title>
+	<link rel="icon" href="sampleSrc/random.svg">
+	<link rel="stylesheet" href="./sampleDist/style.css">
+</head>
+
+<body>
+
+	<div class="background"></div>
+
+	<div class="app-container">
+
+		<div class="app">
+			<h1>Unique word generator</h1>
+
+			<div class="settings">
+				<h2>Prefix:</h2>
+				<input type="text" name="prefix" placeholder="Random...">
+				<label>
+					Use entire word:
+					<input type="checkbox" name="useFullPrefix">
+				</label>
+			</div>
+
+			<div class="settings">
+				<h2>Suffix:</h2>
+				<input type="text" name="suffix" placeholder="Random...">
+				<label>
+					Use entire word:
+					<input type="checkbox" name="useFullSuffix">
+				</label>
+			</div>
+
+			<div class="settings">
+				<h2>Length</h2>
+				<span>Minimum:</span><input type="number" name="minLength" value="4">
+				<span>Maximum:</span><input type="number" name="maxLength" value="10">
+			</div>
+
+			<button>Generate</button>
+
+			<ul></ul>
+
+		</div>
+
+	</div>
+
+	<script src="./sampleDist/script.js"></script>
+</body>
+
+</html>

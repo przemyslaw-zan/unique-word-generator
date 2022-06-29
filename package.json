@@ -1,0 +1,36 @@
+{
+	"name": "unique-word-generator",
+	"author": "https://github.com/przemyslaw-zan",
+	"license": "MIT",
+	"version": "1.0.0",
+	"description": "This library generates a word that (most likely) does not exist in English language yet.",
+	"keywords": [
+		"unique",
+		"original",
+		"new",
+		"word",
+		"generator"
+	],
+	"main": "src/index.js",
+	"scripts": {
+		"build": "webpack --mode=production",
+		"dev": "webpack --mode=development --watch"
+	},
+	"dependencies": {
+		"an-array-of-english-words": "^2.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.5",
+		"@babel/preset-env": "^7.18.2",
+		"babel-loader": "^8.2.5",
+		"clean-terminal-webpack-plugin": "^3.0.0",
+		"css-loader": "^6.7.1",
+		"eslint": "^8.18.0",
+		"mini-css-extract-plugin": "^2.6.1",
+		"postcss": "^8.4.14",
+		"postcss-loader": "^7.0.0",
+		"postcss-preset-env": "^7.7.2",
+		"webpack": "^5.73.0",
+		"webpack-cli": "^4.10.0"
+	}
+}
