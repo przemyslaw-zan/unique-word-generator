@@ -1,4 +1,4 @@
-import words from 'an-array-of-english-words';
+const words = require( 'an-array-of-english-words' );
 
 const ATTEMPTS_LIMIT = 1_000_000;
 const MAX_LENGTH_LIMIT = 2;
@@ -6,7 +6,7 @@ const MIN_LENGTH_LIMIT = 20;
 const DEFAULT_MAX_LENGTH = 100;
 const DEFAULT_MIN_LENGTH = 0;
 
-export default function getUniqueWord ( options = {} ) {
+module.exports = function getUniqueWord ( options = {} ) {
 	options.maxLength = options.maxLength ?? DEFAULT_MAX_LENGTH;
 	options.minLength = options.minLength ?? DEFAULT_MIN_LENGTH;
 
@@ -30,7 +30,7 @@ export default function getUniqueWord ( options = {} ) {
 	return {
 		errors: [ 'Exceeded the limit of generation attempts.' ]
 	};
-}
+};
 
 function generator ( options ) {
 	const result = {};

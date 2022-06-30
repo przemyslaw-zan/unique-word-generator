@@ -1,6 +1,6 @@
 import getUniqueWord from '../src/index';
 
-const DISPLAY_AMOUNT = 10;
+const DISPLAY_AMOUNT = 5;
 
 initApp();
 
